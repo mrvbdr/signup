@@ -1,0 +1,103 @@
+body {
+    --color-primary: rgba(40, 100, 100, 0.7);
+    --color-primarydark: rgb(10, 80, 10);
+    --color-secondary: rgb(60, 60, 190);
+    --color-error: rgb(200, 40, 40);
+    --color-radius: 5px;
+
+
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary)), url(mercek.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+/* Taşıyıcı Alanı */
+.container {
+
+    width: 400px;
+    height: 400px;
+    border-radius: var(--color-radius);
+    background-color: rgb(186, 186, 224);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+    margin: 1rem;
+    padding: 2rem;
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(5, 74, 105);
+    border-radius: var(--color-radius);
+    padding: 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 35px;
+
+
+}
+
+.error {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-error);
+}
+
+.form_input {
+    padding: 10px;
+    display: block;
+    width: 94%;
+    border-radius: var(--color-radius);
+    border: 2px solid burlywood;
+    background-color: rgba(243, 225, 225, 0.952);
+    transition: all 0.4s;
+     margin: 0;
+
+}
+
+.form_input:focus {
+    background-color: white;
+    outline: none;
+    transition: all 0.4s;
+}
+.form_button{
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width:100%;
+    font-size: 15px;
+    transition: all 0.5s;
+    background-color: rgb(6, 87, 87);
+    color: white;
+    border-radius: var(--color-radius);
+}
+
+.form_button:hover{
+    cursor: pointer;
+    background-color: rgb(2, 37, 37);
+    transition: all 0.4s;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+a:hover{
+    color: grey;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+p{
+    text-align: center;
+}
